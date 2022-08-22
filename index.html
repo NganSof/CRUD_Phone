@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="my-4 text-center">MUA HÀNG ONLINE</h1>
+    <div class="d-flex mx-3 mb-2">
+      Chọn dòng sản phẩm bạn cần :
+      <select name="" onchange="checkType()" id="select" class="rounded-2 h-50">
+        <option value="samsung">Samsung</option>
+        <option value="iphone">Iphone</option>
+      </select>
+    </div>
+    <table class="">
+      <div class="row" id="listPhones">
+        <div class="text-center col-3"></div>
+      </div>
+    </table>
+    <button class="add bg-warning text-white p-1 m-5 d-none">
+      Thêm Hàng Thành Công
+    </button>
+    <p class="store my-4 mx-3">Giỏ Hàng</p>
+    <table class="mr-3">
+      <thead>
+        <tr>
+          <th id="image" class="item text-center">Hình ảnh</th>
+          <th id="name" class="item text-center">Sản phẩm</th>
+          <th id="price" class="item text-center">Giá</th>
+          <th id="sl" class="item text-center">Số Lượng</th>
+          <th id="calc" class="item text-center">Tổng cộng</th>
+          <th class="item text-center"></th>
+        </tr>
+      </thead>
+      <tbody id="showPhone"></tbody>
+    </table>
+    <div class="total d-flex">
+      <h2 onclick="" class="">Tổng tiền</h2>
+      <h3 id="total"></h3>
+      <button type="submit" class="bg-primary" onclick="delePhones()">
+        THANH TOÁN
+      </button>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./model/sellphone.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

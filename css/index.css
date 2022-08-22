@@ -1,0 +1,42 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.store {
+  font-size: 30px;
+  font-weight: 600px;
+}
+.add {
+  border: none;
+  width: 200px;
+}
+.item {
+  font-size: 20px;
+  padding: 0px 60px;
+}
+#container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+#listPhones {
+  max-width: 1280px;
+  margin: auto;
+  margin-right: 30px;
+}
+.total {
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 500px;
+}
+.total h3 {
+  margin: 0px 50px;
+}
+
+.total button {
+  border: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 4px;
+}
